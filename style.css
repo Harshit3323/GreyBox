@@ -164,7 +164,7 @@ ul{
 
 .products{
     width: inherit;
-    height: 125vh;
+    height: fit-content     ;
     background-color: #ededdb;
     text-align: center;
     padding-top: 100px;
@@ -175,6 +175,7 @@ ul{
     height: 20vw;
     background-color: #d9d9d9;
     margin-left: 6vw;
+    border-radius: 5%;
 }
 .colm{
     margin-bottom: 50px;
@@ -204,10 +205,12 @@ ul{
 .blurr-cap {
     color: #fff;
     position: inherit;
+    text-align: center;
     top: 10%;
 }
 .blurr-icon {
     position: inherit;
+    text-align: center;
     top: 20%;
 }
 .blurr-icon img{
@@ -234,8 +237,16 @@ ul{
     color: #2b2a2c!important;
     margin-left: 5%;
 }
-.products h3 {
-    font
+.cont::after{
+    content: "Product Name";
+    background-color: #526143;
+    color: #fff;
+    position: relative;
+    top: -25px;
+    padding: 20px 5.2vw 20px;
+    left: 3px;
+    width:200px;
+    font-size: 50%;
 }
 
 @media (max-width: 600px) {
@@ -270,6 +281,7 @@ ul{
     .cont{
         width: 100%!important;
     }
+    
     .col1, .col2, .col3 {
         margin-left: 25%;
     }
@@ -279,9 +291,9 @@ ul{
         margin-bottom: 10vw;
         font-size: 5vw;
     }
-    .products{
+    /* .products{
         height: 500vh;
-    }
+    } */
     .adds {
         font-size: 10px;
         text-align: right;
@@ -297,6 +309,15 @@ ul{
         padding: 10px 20px!important;
         font-size: 12px!important;
     }
+    .cont{
+        margin-bottom: 20vw;
+    }
+    .cont::after{
+        position: relative;
+        top: 3%;
+        padding: 20px 20vw;
+    }
+
 }   
 
 
@@ -328,6 +349,9 @@ ul{
     }
     .dis-png{
         width: 75%!important;
+    }
+    .blur-img{
+        width: 50%!important;
     }
 
 }
@@ -372,11 +396,24 @@ ul{
     .background{
         height: 50vh;
     }
-    .blurr-icon img{
+    /* .blurr-icon img{
         width: 15%;
-    }
+    } */
     .creds-1,.creds-2,.adds,.blank {
         width: 25%!important;
+    }
+    .blur-img{
+        width: 11vw!important;
+        margin-right: 4%;
+    }
+    .blur{
+        height: 85%;
+    }
+    .creds ul{
+        font-size: small;
+    }
+    .adds{
+        font-size: small;
     }
 }
 @media (min-width:601px) and ( max-width:991px) {
@@ -391,6 +428,14 @@ ul{
         margin-left: 50vw;
     }
     .products{
-        height: 100vh;
+        height: 150vh;
+    }
+    .cont::after{
+        display: table;
+        left: calc(170% - 2px);
+        top: calc(1% - 4px);
+    }
+    .about{
+        height: 50vh;
     }
 }
