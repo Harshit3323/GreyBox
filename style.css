@@ -190,12 +190,12 @@ ul{
     color: #fff;
 }
 .background{
-    background-image: url(./bg.png);
+    background-image: url(/image/bg.png);
     width: auto;
     height: 90vh;
 }
 .blur{
-    background-image: url(./blurr.png);
+    background-image: url(/image/blurr.png);
     width: 90%;
     height: 80%;
     position: relative;
